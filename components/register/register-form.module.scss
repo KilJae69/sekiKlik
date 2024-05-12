@@ -1,0 +1,74 @@
+@import "@/styles/variables.module.scss";
+.registerFormWrapper {
+  max-width: 650px;
+  background: white;
+  width: 100%;
+  padding: 50px 75px;
+  border-radius: 16px;
+  box-shadow: -1px 7px 31px 0px rgba(0,0,0,0.11);
+  position: relative;
+ z-index: 11;
+  @media (max-width: 768px) {
+    padding:40px 25px;
+  }
+
+  .dynamicButtons {
+    display: flex;
+    margin-bottom: 60px;
+    height: 50px;
+    border-radius: 30px;
+    overflow: hidden;
+    border: 1px solid #E2E8EC;
+    position: relative;
+    @media (max-width: 768px) {
+      height: 40px;
+    }
+    button {
+      flex: 1;
+      border: none;
+      background: transparent;
+      font-size: 16px;
+      font-weight: 600;
+      opacity: .5;
+      color: $cPrimaryDark;
+      cursor: pointer;
+      transition: opacity .3s ease-in-out;
+      @media (max-width: 768px) {
+        font-size: 13px;
+        font-weight: 400;
+      }
+      &.activeTab {
+        opacity: 1;
+      }
+    }
+    .tabIndicator {
+        position: absolute;
+        width: 50%;
+        height: 100%;
+        background: #F4F4F9;
+        border-radius: 30px;
+        transition: all .3s ease-in-out;
+        z-index: -1;
+       left: 0;
+       top:0;
+       &.right {
+        left: 50%;
+      }
+
+    }
+  }
+
+  .buttonWrapper {
+    text-align: center;
+    padding-top: 15px;
+    button {
+      border: none;
+      min-width:200px;
+      cursor: pointer;
+      @media (max-width: 768px) {
+       min-width: 100%;
+      }
+
+    }
+  }
+}

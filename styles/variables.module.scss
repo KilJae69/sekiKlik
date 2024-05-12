@@ -1,0 +1,23 @@
+/*COLORS*/
+$cPrimary: #3745AC;
+//$cPrimaryLight: #CFD6E9;
+$cSecondary: #E9A649;
+$cPrimaryDark: #163556;
+
+//
+//$cBorder: #CECECE;
+//
+//$cText: #000;
+//$cWhite: #FFF;
+//$cTextDarkBg: #D0D8EB;
+//
+$filterPrimary: brightness(0) invert(24%) sepia(18%) saturate(7090%) hue-rotate(221deg) brightness(91%) contrast(91%);
+$filterSecondary: brightness(0) invert(64%) sepia(90%) saturate(341%) hue-rotate(349deg) brightness(96%) contrast(89%);
+$filterWhite: brightness(0) invert(100%);
+
+
+:export {
+  primaryColor: $cPrimary;
+  primaryColorDark: $cPrimaryDark;
+  secondaryColor: $cSecondary;
+}

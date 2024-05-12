@@ -1,0 +1,138 @@
+@import "@/styles/variables.module.scss";
+.accountWrapper {
+  background: white;
+  width: 385px;
+  height: 100%;
+  padding: 40px;
+  border-bottom-left-radius: 16px;
+  border-top-left-radius: 16px;
+  @media (max-width: 1650px) {
+    padding: 40px 20px;
+  }
+  .inner {
+    height: 100%;
+    overflow-y: auto;
+    max-height: 100vh;
+    padding: 0 10px;
+    position: relative;
+    z-index: 11;
+  }
+  .topSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 100px;
+    @media (max-width: 1650px) {
+      padding-bottom: 50px;
+    }
+
+    @media (max-width: 1450px) {
+      padding-bottom: 25px;
+    }
+    h2,h3,h4 {
+      font-size: 18px;
+      font-weight: 600;
+    }
+    button {
+      background: transparent;
+      border: none;
+      cursor: pointer;
+    }
+  }
+  .titleWrapper {
+    display: flex;
+    align-items: center;
+    padding-bottom: 15px;
+    h2,h3,h4 {
+      font-size:12px;
+      font-weight: bold;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+    span {
+      margin-left: 5px;
+      right: 0;
+      flex:1;
+      height: 1px;
+      background: #BFCBD8;
+    }
+  }
+  .planSection {
+
+    .planInfo {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-bottom: 25px;
+
+      p{
+        font-size: 14px;
+        font-weight: 500;
+        color: $cPrimaryDark;
+      }
+      h2,h3,h4 {
+        font-weight: 600;
+        font-size: 18px;
+        color: $cPrimaryDark;
+      }
+
+    }
+  }
+
+    .button {
+      background: transparent;
+      border: 1px solid $cPrimaryDark;
+      cursor: pointer;
+      font-size: 14px;
+      color: $cPrimaryDark;
+      width: 100%;
+      margin-bottom: 25px;
+
+      &:hover {
+        background: $cSecondary;
+        border-color: $cSecondary;
+        color: white;
+      }
+    }
+
+  .navSection {
+    padding: 25px 0;
+
+    nav {
+      position: relative;
+      z-index: 11;
+      ul {
+        li {
+          position: relative;
+          left: -10px;
+        }
+      }
+    }
+  }
+
+  &.mobile{
+    background: transparent;
+    border-bottom-right-radius: 0;
+    border-top-left-radius:0;
+    width: 100%;
+    height: auto;
+    padding: 0;
+
+    .inner {
+      height: auto;
+      background: white;
+      border-bottom-right-radius: 16px;
+      border-bottom-left-radius: 16px;
+      padding: 30px;
+      @media (max-width: 380px) {
+        padding: 30px 20px;
+      }
+      .topSection {
+        button {
+          display: none;
+        }
+      }
+    }
+
+  }
+}

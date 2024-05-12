@@ -1,0 +1,223 @@
+@import "../styles/variables.module.scss";
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  &.no-scroll{
+    overflow: hidden;
+  }
+}
+
+
+//Remove IOS outlines on form elements
+
+input[type=checkbox] {
+  -moz-appearance:initial !important;// Hack for Firefox Browsers
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
+[contenteditable="true"]:focus {
+  outline: none;
+}
+
+*:focus {
+  outline: none;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+
+.container-xl{
+  max-width: 1540px;
+  margin: 0 auto;
+}
+
+.no-text-link {
+  width: 100%;
+  height: 100%;
+  font-size: 0;
+  position: absolute;
+  left: 0;
+  top:0;
+  right: 0;
+  z-index: 22;
+}
+
+/*CLASS FOR ARTICLE IMG*/
+.img-responsive{
+  max-width: 100%;
+  height: auto;
+}
+
+/*FOR INPUTS TO NOT HAVE BROWSER GENERIC STYLING*/
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-text-fill-color: black;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+/*Custom scrollbar*/
+::-webkit-scrollbar{
+  width: 15px;
+}
+::-webkit-scrollbar-track{
+  background-color: #e5e5e5;
+  border-radius: 100vw;
+  margin: 3px 0;
+}
+::-webkit-scrollbar-thumb{
+  background: black;
+  border: 3px solid #e5e5e5;
+  border-radius: 100vw;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: black;
+}
+/*FOR FIREFOX*/
+@supports (scrollbar-color: black #e5e5e5) {
+  *{
+    scrollbar-color: black #e5e5e5;
+    scrollbar-width: thin;
+  }
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.test {
+  min-height: 100vh;
+  margin-bottom: 500px;
+}
+
+h2,h3,h4,h5 {
+  color: $cPrimaryDark;
+
+}
+
+p.body-text {
+  color: $cPrimaryDark;
+  font-size: 16px;
+  line-height: 30px;
+  @media (max-width: 575px) {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+
+.large-title {
+  font-size: 45px;
+  padding-bottom: 40px;
+  margin: 0;
+  color: $cPrimaryDark;
+  @media (max-width: 1650px) {
+    font-size: 35px;
+    padding-bottom: 20px;
+  }
+
+  @media (max-width: 575px) {
+    font-size: 24px;
+    padding-bottom: 15px;
+  }
+}
+
+.dashboard-private {
+  padding: 125px 15px 60px 15px;
+  background: url("/private-bcg.svg")center/cover no-repeat;
+  overflow: hidden;
+  position: relative;
+  @media (max-width: 992px) {
+    padding: 150px 15px 60px 15px;
+  }
+  .inner-wrapper {
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+    transition: transform .3s ease-in-out;
+  }
+
+  &.sidebar-open {
+    .inner-wrapper {
+      @media (max-width: 1921px) {
+        transform: translateX(200px);
+      }
+      @media (max-width: 1650px) {
+        transform: translateX(150px);
+      }
+      @media (max-width: 1450px) {
+        transform: translateX(0);
+      }
+    }
+  }
+}
+
+
+.rhf-slider {
+  width: 100%;
+  max-width: 100%;
+  margin: 25px 0;
+  .track {
+    background: #BFCBD8;
+    height: 1px;
+
+    &.track-1 {
+      background: $cPrimary;
+      height: 3px;
+    }
+
+  }
+   .thumb {
+    top: -12px;
+    width: 26px;
+    height: 26px;
+     background: $cPrimary;
+     border-radius: 50%;
+     cursor: pointer;
+  }
+
+  &.steps-slider {
+    .track {
+      background: $cPrimary;
+      height: 3px;
+
+      &.track-1 {
+        background: #BFCBD8;
+        height: 1px;
+      }
+  }
+}
+}
+

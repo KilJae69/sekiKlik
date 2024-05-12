@@ -1,0 +1,65 @@
+@import "@/styles/variables.module.scss";
+.formWrapper {
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+
+  .titleWrapper {
+    text-align: center;
+    padding-bottom: 20px;
+    h2 {
+      color: white;
+      font-size: 30px;
+      line-height: 36px;
+      margin-bottom: 15px;
+    }
+    p {
+      color: white;
+    }
+  }
+
+  .textInput {
+    input {
+      display: block;
+      width: 100%;
+      background: white;
+      height: 50px;
+      line-height: 50px;
+      border-radius: 16px;
+      border: none;
+      font-size: 18px;
+      padding: 0 25px;
+      color: $cPrimaryDark;
+    }
+    label {
+      color: $cPrimaryDark;
+      font-size: 18px;
+      left: 25px;
+
+
+    }
+
+  }
+
+  .checkboxWrapper {
+    label {
+      color: white;
+    }
+  }
+
+  .buttonWrapper{
+    text-align: center;
+    padding: 20px 0 40px 0;
+    button {
+      border: 1px solid white;
+      min-width: 200px;
+      cursor: pointer;
+      background: transparent;
+      &:hover {
+        background: $cSecondary;
+        border-color: $cSecondary;
+
+      }
+    }
+  }
+}

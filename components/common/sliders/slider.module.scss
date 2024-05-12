@@ -1,0 +1,60 @@
+@import "@/styles/variables.module.scss";
+.priceBoxes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  div {
+    height: 30px;
+    min-width: 85px;
+    border: 1px solid #BFCBD8;
+    text-align: center;
+    border-radius: 3px;
+    span {
+      line-height: 30px;
+      font-size: 16px;
+      color: $cPrimaryDark;
+    }
+  }
+
+}
+
+
+.labelsRow {
+  padding: 25px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  p {
+    font-size: 12px;
+    font-weight: 500;
+    color: #BFCBD8;
+    margin: 0;
+  }
+}
+.stepsSliderWrapper{
+  padding-bottom: 40px;
+  .skillsLabelRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    p {
+      font-size: 16px;
+      font-weight: 400;
+      color: $cPrimaryDark;
+      margin: 0;
+    }
+    div {
+      height: 30px;
+      min-width: 60px;
+      border: 1px solid #BFCBD8;
+      text-align: center;
+      border-radius: 3px;
+      span {
+        line-height: 30px;
+        font-size: 16px;
+        color: $cPrimaryDark;
+      }
+    }
+  }
+}

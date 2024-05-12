@@ -1,0 +1,63 @@
+@import "@/styles/variables.module.scss";
+.loginFormWrapper {
+  max-width: 550px;
+  width: 100%;
+  position: relative;
+   z-index: 11;
+  margin-bottom:200px;
+
+  .innerWrapper {
+    width: 100%;
+    border-radius: 16px;
+    padding: 40px;
+    box-shadow: -1px 7px 31px 0px rgba(0,0,0,0.11);
+    background: white;
+    @media (max-width: 768px) {
+      padding:40px 25px;
+    }
+    .buttonWrapper {
+      text-align: center;
+      padding-top: 15px;
+      button {
+        border: none;
+        min-width:200px;
+        cursor: pointer;
+        @media (max-width: 768px) {
+          min-width: 100%;
+        }
+
+      }
+    }
+  }
+
+  .bottomLinks {
+    padding: 15px 40px;
+    @media (max-width: 768px) {
+      padding: 15px 5px;
+    }
+    a {
+      display: inline-block;
+      padding: 8px 0;
+      color: $cPrimaryDark;
+      font-size: 16px;
+      text-decoration: none;
+      @media (max-width: 768px) {
+        font-size: 13px;
+      }
+    }
+    p {
+      color: $cPrimaryDark;
+      font-size: 16px;
+      @media (max-width: 768px) {
+        font-size: 13px;
+      }
+      a {
+        color: $cPrimary;
+        text-decoration: underline;
+        font-weight: 500;
+      }
+    }
+  }
+
+
+}

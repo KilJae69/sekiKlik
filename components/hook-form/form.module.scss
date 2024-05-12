@@ -1,0 +1,304 @@
+@import "@/styles/variables.module";
+
+.formRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+    @media screen and (max-width: 992px) {
+        flex-direction: column;
+    }
+
+    div {
+        width: 48%;
+        @media screen and (max-width: 992px) {
+          width: 100%;
+        }
+    }
+}
+.formGroup {
+  position: relative;
+  margin-bottom: 35px;
+
+   input {
+     display: block;
+     width: 100%;
+     border-top: none;
+     border-right: none;
+     border-left: none;
+     border-bottom: 1px solid #BFCBD8;
+     height: 28px;
+     line-height: 28px;
+     font-size: 17px;
+     color: $cPrimaryDark;
+     background: transparent;
+     padding: 0 5px;
+     @media (max-width: 768px) {
+       font-size: 13px;
+     }
+   }
+
+
+    .icon {
+        position: absolute;
+        top: 40%;
+        transform: translateY(-50%);
+        right: 5px;
+        z-index: 10;
+      cursor: pointer;
+
+      &.eye {
+        background: url("/icons/ico_eye.svg")center/contain no-repeat;
+        width: 25px;
+        height: 22px;
+      }
+      &.eye-disabled {
+        background: url("/icons/ico_eye-disabled.svg")center/contain no-repeat;
+        width: 25px;
+        height: 22px;
+      }
+    }
+
+  label:not(.checkbox-label){
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 5px;
+    font-size: 17px;
+    transition: all .25s ease;
+    color: $cPrimaryDark;
+    margin: 0;
+    @media (max-width: 768px) {
+      font-size: 13px;
+    }
+
+    &:hover {
+      cursor: text;
+    }
+
+
+    &.active {
+      top: -10px;
+      font-size: 12px;
+
+
+    }
+
+  }
+
+  .errorSpan {
+    position: absolute;
+    left: 5px;
+    bottom: -20px;
+    text-transform: uppercase;
+    font-size: 10px;
+    color: #F11C1C;
+  }
+
+  ul {
+    background: white;
+    position: absolute;
+    left: 0;
+    top:100%;
+    height: 200px;
+    overflow-y: auto;
+    width: 100%;
+    z-index: 99;
+    li {
+      padding: 5px 10px;
+    }
+  }
+
+  &.textAreaGroup {
+    textarea {
+      display: block;
+      width: 100%;
+      border: 1px solid #BFCBD8;
+      min-height: 130px;
+      line-height: 22px;
+      font-size: 17px;
+      color: $cPrimaryDark;
+      background: transparent;
+      padding: 25px 30px;
+      border-radius: 6px;
+      @media (max-width: 768px) {
+        font-size: 13px;
+        line-height: 20px;
+        padding: 15px;
+      }
+    }
+
+    label {
+      top: 25px;
+      transform: translateY(0);
+      left: 30px;
+      @media (max-width: 768px) {
+        top:15px;
+        left: 15px;
+      }
+      &.active {
+        top: -20px;
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+.checkGroup {
+  position: relative;
+  margin-bottom: 25px;
+  input[type="checkbox"] {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    cursor: pointer;
+
+    &:checked {
+      &::after {
+        opacity: 1;
+        z-index: 2;
+      }
+    }
+    &:before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: -5px;
+      left: -5px;
+      width: 20px;
+      height: 20px;
+      border: 1px solid #BFCBD8;
+      background: white;
+      cursor: pointer;
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      top: -3px;
+      left: -1px;
+      width: 14px;
+      height: 14px;
+      background: url("/icons/ico_form_check.svg")center/contain no-repeat;
+      opacity: 0;
+      border-radius: 5px;
+      cursor: pointer;
+
+    }
+  }
+
+  label {
+    padding-left: 40px;
+    cursor: pointer;
+    font-size: 13px;
+    line-height: 20px;
+    text-transform: none;
+    color: $cPrimaryDark;
+    display: block;
+
+    &:hover {
+      cursor: text;
+    }
+
+    a {
+      color: $cPrimaryDark;
+
+      &:hover {
+        color:$cSecondary;
+      }
+    }
+
+  }
+
+
+  .errorSpan {
+    position: absolute;
+    left: 40px;
+    bottom: -15px;
+    text-transform: uppercase;
+    font-size: 10px;
+    color: #F11C1C;
+  }
+
+}
+
+.radioGroup {
+  position: relative;
+  margin-bottom: 25px;
+  input[type="radio"] {
+    position: absolute;
+    top: 2px;
+    left: 10px;
+    cursor: pointer;
+
+    &:checked {
+      &::after {
+        opacity: 1;
+        z-index: 2;
+      }
+    }
+    &:before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: -5px;
+      left: -5px;
+      width: 24px;
+      height: 24px;
+      border: 1px solid #BFCBD8;
+      background: white;
+      cursor: pointer;
+      border-radius: 50%;
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 14px;
+      height: 14px;
+      background: $cPrimary;
+      border-radius: 50%;
+      opacity: 0;
+      cursor: pointer;
+
+    }
+  }
+
+  label {
+    padding-left: 40px;
+    cursor: pointer;
+    font-size: 13px;
+    line-height: 20px;
+    text-transform: none;
+    color: $cPrimaryDark;
+    display: block;
+
+    &:hover {
+      cursor: text;
+    }
+
+    a {
+      color: $cPrimaryDark;
+
+      &:hover {
+        color:$cSecondary;
+      }
+    }
+
+  }
+
+
+  .errorSpan {
+    position: absolute;
+    left: 40px;
+    bottom: -15px;
+    text-transform: uppercase;
+    font-size: 10px;
+    color: #F11C1C;
+  }
+
+}

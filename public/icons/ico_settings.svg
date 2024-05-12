@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="35" height="34" viewBox="0 0 35 34">
+  <g id="Group_2556" data-name="Group 2556" transform="translate(-54.135 -162)">
+    <ellipse id="Ellipse_33" data-name="Ellipse 33" cx="17.5" cy="17" rx="17.5" ry="17" transform="translate(54.135 162)" fill="#163556"/>
+    <g id="Group_2250" data-name="Group 2250" transform="translate(52.547 164.628)">
+      <g id="Group_2251" data-name="Group 2251" transform="translate(0 0.001)">
+        <path id="Rectangle_3967" data-name="Rectangle 3967" d="M1.329,0H4.036a1.33,1.33,0,0,1,1.33,1.33v0A1.329,1.329,0,0,1,4.037,2.66H1.329A1.329,1.329,0,0,1,0,1.33v0A1.329,1.329,0,0,1,1.329,0Z" transform="translate(8.588 13.391)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+        <line id="Line_1157" data-name="Line 1157" y2="8.189" transform="translate(11.271 5.201)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+        <line id="Line_1158" data-name="Line 1158" y2="7.151" transform="translate(11.271 16.051)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+        <rect id="Rectangle_3968" data-name="Rectangle 3968" width="5.366" height="2.66" rx="1.33" transform="translate(16.101 8.893)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+        <line id="Line_1159" data-name="Line 1159" y2="8.256" transform="translate(18.784 0.638)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+        <line id="Line_1160" data-name="Line 1160" y2="14.865" transform="translate(18.784 11.553)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+        <path id="Rectangle_3969" data-name="Rectangle 3969" d="M1.329,0H4.036a1.33,1.33,0,0,1,1.33,1.33v0A1.329,1.329,0,0,1,4.037,2.66H1.329A1.329,1.329,0,0,1,0,1.33v0A1.329,1.329,0,0,1,1.329,0Z" transform="translate(24.079 14.962)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+        <line id="Line_1161" data-name="Line 1161" y2="9.761" transform="translate(26.763 5.201)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+        <line id="Line_1162" data-name="Line 1162" y2="5.58" transform="translate(26.763 17.621)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="35" height="34" viewBox="0 0 35 34">
+  <g id="Group_2548" data-name="Group 2548" transform="translate(-54.245 -159.574)">
+    <ellipse id="Ellipse_33" data-name="Ellipse 33" cx="17.5" cy="17" rx="17.5" ry="17" transform="translate(54.245 159.574)" fill="#163556"/>
+    <g id="Group_2538" data-name="Group 2538" transform="translate(62.137 167.467)">
+      <line id="Line_1198" data-name="Line 1198" x2="14.437" transform="translate(2.389 1.807)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1.5"/>
+      <g id="Group_2537" data-name="Group 2537" transform="translate(0.5 4.835)">
+        <g id="Group_2539" data-name="Group 2539">
+          <path id="Rectangle_4057" data-name="Rectangle 4057" d="M1.957,0h14.3a1.957,1.957,0,0,1,1.957,1.957V9.833a1.958,1.958,0,0,1-1.958,1.958H1.958A1.958,1.958,0,0,1,0,9.833V1.957A1.957,1.957,0,0,1,1.957,0Z" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1.5"/>
+          <path id="Polygon_1" data-name="Polygon 1" d="M4,0,8,6H0Z" transform="translate(12.633 1.849) rotate(90)" fill="#fff"/>
+        </g>
+      </g>
+      <line id="Line_1199" data-name="Line 1199" x2="9.581" transform="translate(4.817 -1.5)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1.5"/>
+    </g>
+  </g>
+</svg>

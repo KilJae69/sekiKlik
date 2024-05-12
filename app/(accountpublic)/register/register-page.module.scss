@@ -1,0 +1,31 @@
+.registerPage {
+  width: 100%;
+  min-height: 100vh;
+  background: url("/images/register-bcg.svg")center/cover no-repeat;
+  position: relative;
+
+  .inner {
+    padding: 175px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    @media (max-width: 1650px) {
+      padding: 125px 15px;
+    }
+
+    @media (max-width: 992px) {
+      padding: 100px 15px;
+    }
+    h1 {
+      padding-bottom: 60px;
+      @media (max-width: 992px) {
+        padding-bottom: 40px;
+      }
+      @media (max-width: 575px) {
+        padding-bottom: 30px;
+        font-weight: 500;
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+@import "../../../styles/variables.module.scss";
+
+.iconButton {
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $cPrimaryDark;
+  background: transparent;
+  min-width: 233px;
+  padding: 15px 35px;
+  text-decoration: none;
+  border-radius: 60px;
+  transition: all .1s ease-in-out;
+  text-align: center;
+  border: 1px solid $cPrimaryDark;
+  img {
+    margin-right: 10px;
+  }
+  &:hover {
+    background: $cSecondary;
+    border-color: $cSecondary;
+    color: white;
+
+    img {
+      filter:$filterWhite;
+    }
+  }
+
+
+}

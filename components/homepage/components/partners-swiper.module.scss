@@ -1,0 +1,113 @@
+@import "@/styles/variables.module.scss";
+.partnersNavigation {
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding: 50px 0;
+  @media (max-width: 575px) {
+    padding: 25px 0;
+
+  }
+  button {
+    width: 50px;
+    height: 50px;
+    background: white;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid  #BFCBD8;
+    cursor: pointer;
+    z-index: 2;
+    transition: all .3s linear;
+    @media (max-width: 1650px) {
+      width: 35px;
+      height: 35px;
+
+    }
+    @media (max-width: 1550px) {
+      position: absolute;
+      top:50%;
+      transform: translateY(-50%);
+    }
+
+    @media (max-width: 575px) {
+      width: 25px;
+      height: 25px;
+
+    }
+    img {
+      @media (max-width: 575px) {
+        width: 13px;
+        height: 8px;
+
+      }
+    }
+
+    &:hover {
+      background: #BFCBD8;
+      border-color: #BFCBD8;
+      img {
+        filter: $filterWhite;
+      }
+    }
+    &.nextButton {
+        transform: rotate(180deg);
+      @media (max-width: 1550px) {
+        transform:  translateY(-50%) rotate(180deg);
+        right: 15px;
+      }
+    }
+
+    &.prevButton {
+        @media (max-width: 1550px) {
+          left: 15px;
+      }
+    }
+  }
+
+  h2,h3,h4 {
+    color: #BFCBD8;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 3.7px;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    &:before, &:after {
+        content: '';
+        display: inline-block;
+        width: 100%;
+        height: 1px;
+        background: #BFCBD8;
+       flex: 1;
+    }
+
+    &:before {
+        margin-right: 15px;
+
+    }
+    &:after {
+        margin-left: 15px;
+
+    }
+
+
+  }
+}
+
+.swiperWrapper {
+  padding: 25px 50px;
+  @media (max-width: 1550px) {
+    padding: 15px;
+  }
+  .partnerBox {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    img {
+      filter: grayscale(100%);
+    }
+  }
+}

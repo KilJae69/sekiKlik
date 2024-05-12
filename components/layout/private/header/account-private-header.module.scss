@@ -1,0 +1,114 @@
+@import "@/styles/variables.module";
+.accountPrivateHeader {
+  background: white;
+  width: 100%;
+  position: fixed;
+  top:0;
+  z-index: 999;
+  transition: all .3s ease-in-out;
+  .inner {
+    height: 105px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 0 30px;
+    @media (max-width: 1650px) {
+      height: 85px;
+    }
+
+    .logoWrapper {
+      display: block;
+      width: 280px;
+      height: 48px;
+      position: relative;
+      @media (max-width: 1650px) {
+        width: 220px;
+        height: 40px;
+      }
+      @media (max-width: 410px) {
+        width:180px;
+        height: 30px;
+      }
+      .stickyLogo {
+        display: none;
+      }
+    }
+
+    .rightButtons {
+      display: flex;
+      gap:50px;
+      align-items: center;
+    }
+  }
+
+
+
+  &.mobilePrivateHeader {
+    background: transparent;
+    .mobileInner {
+      height: auto;
+      .top {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: white;
+        height: 70px;
+        transition: all .3s ease-in-out;
+        .logoWrapper {
+          display: block;
+          width: 220px;
+          height: 40px;
+          position: relative;
+          @media (max-width: 410px) {
+            width:180px;
+            height: 30px;
+          }
+          .stickyLogo {
+            display: none;
+          }
+        }
+      }
+      .bottom {
+        display:flex;
+        width: 100%;
+        justify-content:space-between;
+        align-items: center;
+        padding: 15px 30px;
+        background: transparent;
+        box-shadow: none;
+        transition: all .3s ease-in-out;
+        @media (max-width: 380px) {
+          padding: 15px;
+        }
+
+
+      }
+
+    }
+  }
+
+  &.scrolled {
+    .mobileInner{
+      .top {
+        margin-top: -70px;
+      }
+      .bottom {
+        background: white;
+        box-shadow: 0px -1px 17px 0px rgba(55, 69, 172, 0.2);
+          p {
+            display: none !important;
+          }
+      }
+    }
+    &.navOpen {
+       .bottom {
+         box-shadow: none;
+       }
+    }
+  }
+
+  &.loading {
+    opacity: 0;
+  }
+}

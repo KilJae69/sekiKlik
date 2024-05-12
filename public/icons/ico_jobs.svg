@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="35" height="34" viewBox="0 0 35 34">
+  <g id="Group_2547" data-name="Group 2547" transform="translate(-54.245 -159.574)">
+    <ellipse id="Ellipse_33" data-name="Ellipse 33" cx="17.5" cy="17" rx="17.5" ry="17" transform="translate(54.245 159.574)" fill="#163556"/>
+    <g id="Group_2268" data-name="Group 2268" transform="translate(63.683 166.141)">
+      <g id="Group_2267" data-name="Group 2267">
+        <g id="Group_2831" data-name="Group 2831">
+          <rect id="Rectangle_3970" data-name="Rectangle 3970" width="12.387" height="16.419" transform="translate(0.42 0.42)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+          <path id="Path_7684" data-name="Path 7684" d="M18.1,9.57h3.421V25.993H9.136v-3.6" transform="translate(-5.295 -5.547)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+        </g>
+      </g>
+      <line id="Line_1166" data-name="Line 1166" x2="4.283" transform="translate(3.73 4.348)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <line id="Line_1168" data-name="Line 1168" x2="5.858" transform="translate(3.73 8.786)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <line id="Line_1170" data-name="Line 1170" x2="5.858" transform="translate(3.73 13.038)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    </g>
+  </g>
+</svg>

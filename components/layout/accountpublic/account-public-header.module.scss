@@ -1,0 +1,85 @@
+@import "@/styles/variables.module.scss";
+.accountPublicHeader {
+  background: white;
+  box-shadow: 0px -1px 17px 0px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  position: fixed;
+  top:0;
+  z-index: 999;
+  .inner {
+    height: 105px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    @media (max-width: 1650px) {
+      height: 85px;
+    }
+
+    @media (max-width: 992px) {
+      height: 70px;
+    }
+    .logoWrapper {
+      display: block;
+      width: 280px;
+      height: 48px;
+      position: relative;
+      @media (max-width: 1650px) {
+        width: 220px;
+        height: 40px;
+      }
+      @media (max-width: 410px) {
+        width:180px;
+        height: 30px;
+      }
+      .stickyLogo {
+        display: none;
+      }
+    }
+    .backButtonWrapper {
+      position: absolute;
+      left:30px;
+      top:50%;
+      transform: translateY(-50%);
+      @media (max-width: 992px) {
+        left:15px;
+        text-align: left;
+      }
+      button {
+        padding: 15px 40px;
+        background: transparent;
+        border:none;
+        font-size: 17px;
+        color: $cPrimaryDark;
+        opacity: .5;
+        transition: opacity .3s ease-in-out;
+        cursor: pointer;
+
+        @media (max-width: 992px) {
+          padding: 15px;
+
+        }
+
+        &:before {
+          content: "";
+          display: inline-block;
+          width: 10px;
+          height: 10px;
+          position: relative;
+          left: -15px;
+          top:-1px;
+          background: url("/icons/ico_chevron-left.svg")center/contain no-repeat;
+          @media (max-width: 992px) {
+            left: -10px;
+
+          }
+        }
+
+        &:hover {
+          opacity: 1;
+        }
+
+      }
+    }
+  }
+}

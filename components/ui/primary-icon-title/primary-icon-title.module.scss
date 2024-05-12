@@ -1,0 +1,33 @@
+@import "@/styles/variables.module.scss";
+.titleDiv {
+  display: flex;
+  align-items: center;
+  padding: 40px 0 25px 0;
+  @media (max-width: 768px) {
+    justify-content: center;
+  }
+  .iconWrapper {
+    width: 35px;
+    height: 35px;
+    margin-right: 15px;
+    position: relative;
+    @media (max-width: 768px) {
+      width: 25px;
+      height: 25px;
+      margin-right: 10px;
+    }
+  }
+
+  h1,h2,h3,h4 {
+    font-size: 46px;
+    font-weight: 700;
+    color: $cPrimaryDark;
+    margin: 0;
+    @media (max-width: 1650px) {
+      font-size: 36px;
+    }
+    @media (max-width: 768px) {
+      font-size: 26px;
+    }
+  }
+}

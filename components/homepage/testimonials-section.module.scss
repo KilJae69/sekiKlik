@@ -1,0 +1,137 @@
+@import "../../styles/variables.module.scss";
+.testimonialsSection {
+    padding:50px 15px;
+    background: rgb(248,248,252);
+    background: linear-gradient(180deg, rgba(248,248,252,1) 0%, rgba(255,255,255,0.21612394957983194) 100%);
+    @media (max-width: 992px) {
+        padding:20px 15px 40px 15px;
+    }
+    .inner {
+        .titleWrapper {
+            padding: 40px 0 80px 0;
+            @media (max-width: 1650px) {
+                padding: 40px 0 80px 0;
+            }
+            @media (max-width: 768px) {
+                padding: 25px 0 40px 0;
+            }
+            @media (max-width: 575px) {
+                padding: 25px 0;
+            }
+            h2 {
+                color: $cPrimaryDark;
+                font-size: 30px;
+                @media (max-width: 1650px) {
+                    font-size: 26px;
+                }
+
+                @media (max-width: 575px) {
+                    font-size: 22px;
+                }
+            }
+            h3 {
+                color: $cPrimary;
+                font-size: 26px;
+                font-weight: 400;
+                @media (max-width: 1650px) {
+                    font-size: 20px;
+                }
+            }
+        }
+
+        .testimonialsWrapper {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            .singleBox{
+                width: 46%;
+                display: flex;
+                padding: 50px 0;
+                margin-bottom: 50px;
+                @media (max-width: 1650px) {
+                    margin-bottom: 25px;
+                }
+
+                @media (max-width: 992px) {
+                    width:100%;
+                    margin-bottom: 0;
+                }
+                @media (max-width: 768px) {
+                    padding: 25px 0;
+                }
+                .imageWrapper {
+                    transform: translateY(-40%);
+                    position: relative;
+                    @media (max-width: 768px) {
+                        transform: translateY(-10%);
+                    }
+                    &:after{
+                        content: "";
+                        width: 184px;
+                        height: 134px;
+                        position: absolute;
+                        right: -70px;
+                        top:-45px;
+                        z-index: -1;
+                        background: url("/quote_shape.svg")center/contain no-repeat;
+                        @media (max-width: 768px) {
+                            width: 138px;
+                            height: 100.5px;
+                            right: -52.5px;
+                            top: -33.75px;
+                        }
+                    }
+                    img {
+                        border-radius: 100%;
+                        @media (max-width: 768px) {
+                           width: 100px;
+                            height: 100px;
+                        }
+                    }
+                }
+                .contentWrapper {
+                    padding:0 0 0 25px;
+                    @media (max-width: 768px) {
+                        padding:0 0 0 40px;
+                    }
+                    p {
+                        margin-bottom: 20px;
+                        @media (max-width: 768px) {
+                            margin-bottom: 10px;
+                        }
+                    }
+                    h3 {
+                        font-size:16px;
+                        color: $cPrimaryDark;
+                        font-weight: 600;
+                        margin-bottom: 5px;
+                        @media (max-width: 768px) {
+                            font-size:15px;
+                            margin-bottom: 0;
+                        }
+                    }
+                    h4 {
+                        font-size:13px;
+                        font-weight: 400;
+                        color: $cPrimaryDark;
+                    }
+                }
+            }
+        }
+        .btnWrapper {
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            margin-top: -50px;
+            position: relative;
+            z-index: 11;
+            @media (max-width: 1650px) {
+                margin-top: -25px;
+            }
+
+            @media (max-width: 992px) {
+                margin-top: 25px;
+            }
+        }
+    }
+}

@@ -1,0 +1,21 @@
+@import "@/styles/variables.module.scss";
+
+.mainFooter {
+  padding: 275px 0 0 0;
+
+  background: url("/footer-bg.svg")center/cover no-repeat;
+  @media (max-width: 768px) {
+    background: url("/footer-bg-xs.png")center/cover no-repeat;
+  }
+  .inner {
+    padding: 0 15px 15px 15px;
+    @media (max-width: 768px) {
+      padding: 0 15px 250px 15px;
+    }
+
+  }
+
+  &.noPadding {
+    padding: 15px 0 0 0;
+  }
+}
