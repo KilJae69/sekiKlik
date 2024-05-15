@@ -1,0 +1,28 @@
+.wrapper {
+  max-width: 700px;
+  margin-inline: auto;
+  text-align: center;
+  margin-top: 150px;
+
+  h1 {
+    font-size: 46px;
+    font-weight: 700;
+    line-height: 69px;
+  }
+
+  p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+  }
+
+  input {
+    width: 100%;
+    min-height: 60px;
+    border: 2px solid rgb(232, 236, 239);
+    border-radius: 30px;
+    box-shadow: 0px 0px 30px 0px rgba(32, 94, 207, 0.15);
+    background: rgb(255, 255, 255);
+    margin-top: 15px;
+  }
+}
