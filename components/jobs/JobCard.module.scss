@@ -1,0 +1,205 @@
+.cardContainer {
+  width: 350px;
+  max-height: 341px;
+  background-color: white;
+
+  border-radius: 20px;
+  box-shadow: 0px 0px 30px 0px rgba(58, 67, 185, 0.1);
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: border 0.4s ease-in-out;
+
+  &:hover {
+    border: 2px solid rgb(22, 53, 86);
+
+    .circle {
+      background-color: rgb(22, 53, 86);
+    }
+  }
+
+  .innerContent {
+    display: flex;
+    flex-direction: column;
+    padding-inline: 36px;
+    padding-block: 22px;
+
+    .divider {
+      width: 100%;
+      height: 1px;
+      background-color: rgb(232, 236, 239);
+    }
+
+    .locationSalary {
+      margin-bottom: 12px;
+    }
+  }
+
+  .cardHeaderWrapper {
+    margin-bottom: 12px;
+    .cardHeader {
+      display: flex;
+      align-items: baseline;
+      gap: 10px;
+
+      span {
+        font-size: 12px;
+        font-weight: 400;
+        display: inline-block;
+      }
+
+      .badge {
+        width: 100px;
+        height: 20px;
+        background-color: rgb(118, 172, 56);
+        border-radius: 10px;
+        text-align: center;
+
+        span {
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 20px;
+          color: white;
+        }
+      }
+    }
+
+    h3 {
+      font-size: 22px;
+      font-weight: 600;
+      line-height: 33px;
+      margin-top: 12px;
+    }
+  }
+
+  .candidatesWrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: flex-start;
+
+    padding-top: 20px;
+    margin-top: 12px;
+
+    span {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 21px;
+      display: inline-block;
+    }
+
+    .candidatesTotal {
+      display: flex;
+      gap: 4px;
+
+      p {
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 33px;
+      }
+    }
+  }
+
+  .progressWrapper {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+
+    .circleWrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 38px;
+      height: 38px;
+      background-color: lightgray;
+      border-radius: 50%;
+      flex-grow: 0;
+
+      .outer {
+        position: relative;
+        width: 90%;
+        height: 90%;
+        background-color: green;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .inner {
+        width: 50%;
+        height: 50%;
+        background-color: white;
+        border-radius: 50%;
+      }
+    }
+  }
+
+  .cardFooter {
+    width: 100%;
+    min-height: 76px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 30px 0px rgba(58, 67, 185, 0.1);
+    background-color: white;
+    display: flex;
+    padding-left: 37px;
+    align-items: center;
+  }
+}
+
+.circlesContainer {
+  position: relative;
+  width: 28px; // Adjust width as necessary
+  height: 28px; // Adjust height as necessary
+  cursor: pointer;
+
+  
+
+  .circles {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+    width: 25px;
+    height: 25px;
+  }
+
+  .circle {
+    border-radius: 50%;
+    width: 5px;
+    height: 5px;
+    background-color: rgb(232, 236, 239);
+    position: relative;
+    transition: all .4s ease-in-out;
+  }
+
+  .circlesX {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 1;
+
+    &:hover {
+      opacity: 0;
+    }
+
+    .circle1 {
+      position: absolute;
+      top: 5.2px;
+      left: 5.3px;
+    }
+    .circle2 {
+      position: absolute;
+      top: 5.2px;
+      left: 15.3px;
+    }
+    .circle3 {
+      position: absolute;
+      top: 15.3px;
+      left: 4.5px;
+    }
+    .circle4 {
+      position: absolute;
+      top: 15.3px;
+      left: 15.3px;
+    }
+  }
+}

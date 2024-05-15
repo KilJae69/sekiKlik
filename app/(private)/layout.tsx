@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 'use client';
 import MainFooter from '@/components/layout/footer/main-footer';
 import React from 'react';
@@ -22,3 +23,4 @@ export default function Layout({
     </>
   );
 }
+
