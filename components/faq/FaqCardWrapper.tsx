@@ -124,10 +124,23 @@ const faqDummyData = [
   },
 ];
 
-const FaqCardWrapper = () => {
+interface Props {
+  category?: {
+    id: number;
+    categoryTitle: string;
+    questions: {
+      id: number;
+      question: string;
+      answer: string;
+    }[];
+  };
+}
+
+const FaqCardWrapper = ({ category }: Props) => {
+  const categories = category ? [category] : faqDummyData;
   return (
     <div className={`container-xl ${styles.wrapper}`}>
-      {faqDummyData.map((category) => (
+      {categories.map((category) => (
         <FaqCard key={category.id} category={category} />
       ))}
     </div>

@@ -1,40 +1,30 @@
 .cardWrapper {
-  width: 650px;
+  width: 420px;
 
   background: rgb(255, 255, 255);
-
-  @media (max-width: 1390px) {
-    margin-inline: auto;
-  }
+  margin-inline: auto;
 
   ul {
-    li:first-child {
-      box-shadow: 0px 0px 30px 0px rgba(55, 69, 172, 0.15);
+    div {
+      min-height: 60px;
       border-radius: 20px 20px 0px 0px;
+      box-shadow: 0px 0px 30px 0px rgba(55, 69, 172, 0.15);
+      background: rgb(255, 255, 255);
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
       p {
-        font-size: 20px;
+        font-size: 12px;
         font-weight: 700;
-        line-height: 30px;
-        color: rgb(22, 53, 86);
+        line-height: 18px;
+        letter-spacing: 2.4px;
+        text-transform: uppercase;
       }
     }
 
     li {
       border-bottom: 1px solid rgb(191, 203, 216);
-      &:not(:first-child) {
-        &:hover{
-            background-color: rgb(219, 218, 218);
-        }
-      }
-
-      &:hover {
-        img {
-          filter: invert(36%) sepia(17%) saturate(681%) hue-rotate(167deg)
-            brightness(92%) contrast(88%);
-        }
-      }
-
       a {
         display: flex;
         justify-content: space-between;
@@ -45,6 +35,18 @@
         font-size: 16px;
         font-weight: 400;
         line-height: 30px;
+        p {
+          font-size: 20px;
+          font-weight: 700;
+          line-height: 30px;
+        }
+
+        &:hover {
+          img {
+            filter: invert(36%) sepia(17%) saturate(681%) hue-rotate(167deg)
+              brightness(92%) contrast(88%);
+          }
+        }
       }
     }
   }
