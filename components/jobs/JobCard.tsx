@@ -1,9 +1,60 @@
+'use client';
+import { useState } from 'react';
 import BentoButton from './BentoButton';
 import styles from './JobCard.module.scss';
+import Link from 'next/link';
+import Image from 'next/image';
 
 const JobCard = () => {
+  const [toggleSidebar, setToggleSidebar] = useState(false);
+  const isListView = true;
+
+  const handleSidebarToggle = () => {
+    setToggleSidebar(!toggleSidebar);
+  };
+
   return (
-    <div className={styles.cardContainer}>
+    <div
+      onClick={handleSidebarToggle}
+      className={`${styles.cardContainer} ${isListView && styles.listView} ${toggleSidebar && styles.active}`}
+    >
+      <div className={styles.sidebar}>
+        <ul>
+          <li>
+            <Link href="/">
+              <p>View applicants</p>
+              <Image
+                src="/icons/ico_thin_chevron.svg"
+                width={8}
+                height={16}
+                alt="icon chevron"
+              />
+            </Link>
+          </li>
+          <li>
+            <Link href="/">
+              <p>Manage job</p>
+              <Image
+                src="/icons/ico_thin_chevron.svg"
+                width={8}
+                height={16}
+                alt="icon chevron"
+              />
+            </Link>
+          </li>
+          <li>
+            <Link href="/">
+              <p>Repost a job</p>{' '}
+              <Image
+                src="/icons/ico_thin_chevron.svg"
+                width={8}
+                height={16}
+                alt="icon chevron"
+              />
+            </Link>
+          </li>
+        </ul>
+      </div>
       <div className={styles.innerContent}>
         <div className={styles.cardHeaderWrapper}>
           <div className={styles.cardHeader}>
@@ -18,7 +69,9 @@ const JobCard = () => {
 
         <div className={styles.locationSalary}>
           <p>Croatia</p>
-          <span>5,000</span>-<span>7,000</span>&euro;
+          <p>
+            <span>5,000</span>-<span>7,000</span>&euro;
+          </p>
         </div>
 
         <div className={styles.divider}></div>
