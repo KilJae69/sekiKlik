@@ -1,3 +1,11 @@
+/* eslint-disable prettier/prettier */
+import PurchaseSuccess from '@/components/subscriptions/success/PurchaseSuccess';
+
 export default function SubscriptionSuccessPage() {
-  return <div>SUBSCRIPTION SUCCESS PAGE</div>;
+  return (
+    <>
+      <PurchaseSuccess />
+    </>
+  );
 }
+
