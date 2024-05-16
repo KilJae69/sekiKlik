@@ -1,5 +1,6 @@
 /* eslint-disable prettier/prettier */
 import ApplicantCard from '@/components/applicants/ApplicantCard';
+import NotificationCard from '@/components/notifications/NotificationCard';
 import SubscriptionCard from '@/components/subscriptions/SubscriptionCard';
 
 const cardDummyData = [
@@ -80,6 +81,7 @@ export default function SubscriptionsPage() {
       )})}
 
       <ApplicantCard />
+      <NotificationCard />
     </div>
   );
 }

@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import Link from 'next/link';
 import styles from './iconbutton.module.scss';
 import Image from 'next/image';
@@ -46,3 +47,4 @@ export default function IconButton({
     </button>
   );
 }
+
