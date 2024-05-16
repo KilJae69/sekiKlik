@@ -4,30 +4,31 @@ import styles from './applicant-card.module.scss';
 const ApplicantCard = () => {
   return (
     <div className={styles.cardWrapper}>
-      <div className={styles.infoWrapper}>
-        <div className={styles.imageWrapper}>
-          <Image
-            src="/images/rosy.jpg"
-            width={70}
-            height={70}
-            alt="user photo"
-          />
+      <div className={styles.contentWrapper}>
+        <div className={styles.infoWrapper}>
+          <div className={styles.imageWrapper}>
+            <Image
+              src="/images/rosy.jpg"
+              width={70}
+              height={70}
+              alt="user photo"
+            />
+          </div>
+
+          <div className={styles.dataWrapper}>
+            <h4>Johanes Doesentis Jr.</h4>
+            <p>
+              <span>5,000</span>-<span>7,000</span>&euro;
+            </p>
+            <p>Croatia</p>
+          </div>
         </div>
 
-        <div className={styles.dataWrapper}>
-          <h4>Johanes Doesentis Jr.</h4>
-          <p>
-            <span>5,000</span>-<span>7,000</span>&euro;
-          </p>
-          <p>Croatia</p>
+        <div className={styles.statusWrapper}>
+          <span>Match</span>
+          <span>Interview in progress</span>
         </div>
       </div>
-
-      <div className={styles.statusWrapper}>
-        <span>Match</span>
-        <span>Interview in progress</span>
-      </div>
-
       <div className={styles.buttonsWrapper}>
         <button>
           <span>2</span>

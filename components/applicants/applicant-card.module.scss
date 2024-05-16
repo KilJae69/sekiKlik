@@ -1,9 +1,11 @@
 .cardWrapper {
+  position: relative;
   background: white;
   min-height: 126px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  border: 1px solid rgb(232, 236, 239);
 
   &:hover {
     background: rgb(247, 248, 250);
@@ -16,7 +18,7 @@
   @media (max-width: 890px) {
     flex-direction: column;
     gap: 20px;
-    padding: 20px;
+
     max-width: fit-content;
   }
 
@@ -24,11 +26,24 @@
     display: inline-block;
   }
 
+  .contentWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-basis: 64%;
+
+    @media (max-width: 890px) {
+      padding: 20px;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 20px;
+    }
+  }
+
   .infoWrapper {
     display: flex;
     align-items: center;
     gap: 39px;
-    margin-left: 59px;
 
     @media (max-width: 890px) {
       margin-left: 0;
@@ -94,6 +109,9 @@
   }
 
   .buttonsWrapper {
+    position: relative;
+    top: 0;
+    right: 0;
     min-width: 36%;
     min-height: 126px;
     display: flex;
@@ -105,6 +123,7 @@
       width: 100%;
       border-top: 1px solid rgb(232, 236, 239);
       gap: 20px;
+      left: 0;
     }
 
     button {
