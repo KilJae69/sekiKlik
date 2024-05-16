@@ -1,5 +1,6 @@
 /* eslint-disable prettier/prettier */
 import ApplicantCard from '@/components/applicants/ApplicantCard';
+import ApplicantSidebarData from '@/components/applicants/ApplicantSidebarData';
 import NotificationCard from '@/components/notifications/NotificationCard';
 import SubscriptionCard from '@/components/subscriptions/SubscriptionCard';
 
@@ -82,6 +83,7 @@ export default function SubscriptionsPage() {
 
       <ApplicantCard />
       <NotificationCard />
+      <ApplicantSidebarData />
     </div>
   );
 }

@@ -1,0 +1,23 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+
+  h3 {
+    color: rgba(22, 53, 86, 0.5);
+
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: 2.4px;
+    text-align: left;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+
+  div {
+    height: 1px;
+    width: 100%;
+    background-color: rgb(223, 227, 230);
+  }
+}

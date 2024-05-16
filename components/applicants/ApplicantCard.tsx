@@ -1,19 +1,13 @@
 import Image from 'next/image';
 import styles from './applicant-card.module.scss';
+import UserImage from '../common/UserImage';
 
 const ApplicantCard = () => {
   return (
     <div className={styles.cardWrapper}>
       <div className={styles.contentWrapper}>
         <div className={styles.infoWrapper}>
-          <div className={styles.imageWrapper}>
-            <Image
-              src="/images/rosy.jpg"
-              width={70}
-              height={70}
-              alt="user photo"
-            />
-          </div>
+          <UserImage src="/images/rosy.jpg" />
 
           <div className={styles.dataWrapper}>
             <h4>Johanes Doesentis Jr.</h4>

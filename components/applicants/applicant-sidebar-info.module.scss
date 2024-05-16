@@ -1,0 +1,26 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  color: rgb(22, 53, 86);
+
+  h4 {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    white-space: nowrap;
+  }
+
+  p {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    white-space: nowrap;
+  }
+
+  .wallOfText {
+    text-align: justify;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+  }
+}

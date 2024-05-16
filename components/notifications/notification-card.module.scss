@@ -37,10 +37,10 @@
         font-weight: 400;
         line-height: 21px;
         opacity: 0.7;
-        transform: opacity 0.3s ease-in-out;
+      
         overflow: hidden;
         display: -webkit-box;
-        -webkit-line-clamp: 1; // Number of lines before truncating
+        -webkit-line-clamp: 1; 
         -webkit-box-orient: vertical;
         text-overflow: ellipsis;
       }
