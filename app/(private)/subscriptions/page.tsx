@@ -1,4 +1,5 @@
 /* eslint-disable prettier/prettier */
+import ApplicantCard from '@/components/applicants/ApplicantCard';
 import SubscriptionCard from '@/components/subscriptions/SubscriptionCard';
 
 const cardDummyData = [
@@ -77,6 +78,8 @@ export default function SubscriptionsPage() {
         return (
         <SubscriptionCard key={card.id} cardData={card} buttonLabel={buttonLabel}/>
       )})}
+
+      <ApplicantCard />
     </div>
   );
 }
