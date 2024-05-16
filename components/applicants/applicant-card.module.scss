@@ -12,6 +12,41 @@
 
     .buttonsWrapper {
       background-color: white;
+      border-top-left-radius: 20px;
+      border-bottom-left-radius: 20px;
+      transition: all 0.3s ease-in-out;
+
+      &::before {
+        content: '';
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        background: rgb(247, 248, 250);
+        top: 52%;
+        transform: translateY(-50%) rotate(45deg) translateX(-50%);
+        left: -3px;
+        z-index: 10;
+        border-top: 1px solid rgb(232, 236, 239);
+        border-right: 1px solid rgb(232, 236, 239);
+       
+      }
+
+      @media (max-width: 890px) {
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+        border-top: 1px solid rgb(232, 236, 239);
+        border-left: none;
+        border-right: none;
+        border-bottom: none;
+
+        &::before {
+          left: 45%;
+          top: 0;
+          transform: translateY(-18%) rotate(135deg) translateX(-50%);
+        }
+      }
     }
   }
 
