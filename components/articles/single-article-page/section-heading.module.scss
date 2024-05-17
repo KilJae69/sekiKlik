@@ -1,0 +1,63 @@
+.headingWrapper {
+  max-width: 900px;
+  .headingCardWrapper {
+    min-height: 259px;
+    padding-inline: 36px;
+    padding-top: 32px;
+    padding-bottom: 40px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 30px 0px rgba(55, 69, 172, 0.15);
+    background: rgb(255, 255, 255);
+
+    span {
+      display: flex;
+      align-items: center;
+      min-height: 30px;
+      color: rgba(22, 53, 86, 0.5);
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 18px;
+      border-left: 2px solid rgb(232, 236, 239);
+      padding-left: 10px;
+    }
+
+    h1 {
+      margin-top: 14px;
+      font-size: 60px;
+      font-weight: 700;
+      line-height: 70px;
+    }
+  }
+
+  p {
+    margin-top: 30px;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 34px;
+  }
+
+  &.notLead {
+    .headingCardWrapper {
+      box-shadow: none;
+      background: transparent;
+      min-height: auto;
+      padding: 0;
+
+      span {
+        display: none;
+      }
+
+      h1 {
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 60px;
+      }
+
+      p {
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 1.7; //ne kuzim
+      }
+    }
+  }
+}

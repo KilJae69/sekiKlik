@@ -1,0 +1,43 @@
+.sectionWrapper {
+  padding-inline: 20px;
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 400px;
+  margin-bottom: -640px;
+  min-height: 1320px;
+  background: radial-gradient(
+    50% 50% at 32% 24%,
+    rgb(246, 247, 253),
+    rgb(250, 250, 250) 100%
+  );
+
+  .innerContent {
+    .articleGrid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      row-gap: 50px;
+      column-gap: 100px;
+      margin-top: 50px;
+      align-items: center;
+     
+
+      @media (max-width: 900px) {
+        grid-template-columns: 1fr;
+        row-gap: 40px;
+        column-gap: 0;
+      }
+    }
+
+    .btnWrapper {
+      display: flex;
+      justify-content: center;
+      margin-top: 50px;
+      .viewAllBtn {
+        min-width: 286px;
+        height: 50px;
+        background: transparent;
+        color: inherit;
+      }
+    }
+  }
+}
