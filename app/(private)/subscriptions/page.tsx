@@ -128,6 +128,7 @@ export default function SubscriptionsPage() {
           title={article.title}
           text={article.text}
           date={article.date}
+          isSmall
         />
       ))}
     </div>

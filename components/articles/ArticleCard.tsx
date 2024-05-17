@@ -6,11 +6,12 @@ interface ArticleCardProps {
   date: string;
   title: string;
   text: string;
+  isSmall?: boolean;
 }
 
-const ArticleCard = ({ src, date, title, text }: ArticleCardProps) => {
+const ArticleCard = ({ src, date, title, text, isSmall }: ArticleCardProps) => {
   return (
-    <div className={styles.wrapper}>
+    <div className={`${styles.wrapper} ${isSmall && styles.small}`}>
       <div className={styles.imageWrapper}>
         <Image src={src} fill alt={src} />
       </div>

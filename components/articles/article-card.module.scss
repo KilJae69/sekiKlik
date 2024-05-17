@@ -61,4 +61,17 @@
       text-overflow: ellipsis;
     }
   }
+
+  &.small {
+    .imageWrapper {
+      max-width: 293px;
+      height: 220px;
+    }
+
+    .cardWrapper {
+      max-width: 390px;
+        margin-top: -200px;
+        margin-left: 270px;
+    }
+  }
 }
